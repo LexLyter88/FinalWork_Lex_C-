@@ -14,21 +14,21 @@ namespace final
             Console.WriteLine("[\"{0}\"]", string.Join("\", \"", GetArrayWithRestrictElementLength(arr, ELEMENT_MAX_LENGTH)));
         }
 
-        public static string[] GetArrayWithRestrictElementLength(string[] array, int maxLength) {
-            string[] newArray = new string[GetLengthForArray(array, maxLength)];
+        public static string[] GetArrayWithRestrictElementLength(string[] array, int maxLengthElement) {
+            string[] newArray = new string[GetLengthForArray(array, maxLengthElement)];
             int index = 0;
             for(int i = 0; i < array.Length; i++) {        
-                if(array[i].Length <= maxLength) {
+                if(array[i].Length <= maxLengthElement) {
                     newArray[index++] = array[i];
                 }
             }
             return newArray;
         }
 
-        private static int GetLengthForArray(string[] array, int maxLength) {
+        private static int GetLengthForArray(string[] array, int maxLengthElement) {
             int newLength = 0;
             foreach(string el in array) {
-                if(el.Length <= maxLength) {
+                if(el.Length <= maxLengthElement) {
                     newLength++;
                 }
             }
