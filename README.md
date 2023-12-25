@@ -18,3 +18,6 @@
 [“1234”, “1567”, “-2”, “computer science”] → [“-2”]
 
 [“Russia”, “Denmark”, “Kazan”] → []
+
+### Блок-схема
+![Изображение](https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Markdown-mark.svg/1920px-Markdown-mark.svg.png "Логотип Markdown")
