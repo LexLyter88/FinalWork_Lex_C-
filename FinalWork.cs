@@ -7,10 +7,11 @@ namespace final
 {
     public class FinalWork
     {
+        private const int MAX_LENGTH = 3;
         public static void Main(string[] args) {
             string[] arr = {"Hello", "2", "world", ":-)"};
 
-            Console.WriteLine("[\"{0}\"]", string.Join("\", \"", GetArrayWithRestrictElementLength(arr, 3)));
+            Console.WriteLine("[\"{0}\"]", string.Join("\", \"", GetArrayWithRestrictElementLength(arr, MAX_LENGTH)));
         }
 
         public static string[] GetArrayWithRestrictElementLength(string[] array, int maxLength) {
